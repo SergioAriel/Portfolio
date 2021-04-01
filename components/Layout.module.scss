@@ -1,0 +1,20 @@
+$maxwidth: 600px;
+
+
+.containter {
+    display: grid;
+    place-items: center;
+
+    main {
+        background-color: rgb(66, 66, 66);
+        border: double;
+        border-width: 7px;
+        border-color: gray;
+    }
+
+    @media screen and (max-width: $maxwidth) {
+        main {
+            border: none;
+        }
+    }
+}

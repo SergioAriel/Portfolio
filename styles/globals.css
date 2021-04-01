@@ -1,0 +1,23 @@
+html,
+body{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image:  
+  radial-gradient(5px at 15px 25% , #000000 1%, #707070 0.7px, rgba(114, 112, 112, 0.3) 1px, rgba(0, 0, 0, 0) 5px);
+  background-position: 0 0 15px 15px;
+  background-size: 50px 50px;
+
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box; 
+}

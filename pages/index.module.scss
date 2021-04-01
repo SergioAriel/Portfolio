@@ -1,0 +1,23 @@
+$maxwidth: 600px;
+
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+    background-color: white;
+    box-shadow: 0 0 15px gray;
+    img{
+        height: 100px;
+        width: 100px;
+    }
+
+}
+@media screen and (max-width: $maxwidth)  {
+    .section{
+        margin: 0;
+        width: 100%;
+    }
+
+}

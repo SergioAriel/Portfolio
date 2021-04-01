@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    background-color: black;
+    color: rgb(93, 146, 196);
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .title{
+        margin-left: 1rem;
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-around;
+    img{
+        height: 3em;
+        width: 3em;
+        border-radius: 50%;
+        background-color: black;
+    }
+    li{
+        margin-right: 1rem;
+        list-style: none;
+    }
+}
