@@ -42,5 +42,21 @@ export const skills = [
     {
         title: "Javascript",
         img: "Javascript.png"
+    },
+    {
+        title: "ReactJS",
+        img: "ReactJS.png"
+    },
+    {
+        title: "CSS",
+        img: "CSS.png"
+    },
+    {
+        title: "NodeJS",
+        img: "NodeJS.png"
+    },
+    {
+        title: "Redux",
+        img: "Redux.png"
     }
 ]

@@ -1,23 +1,39 @@
 $maxwidth: 600px;
 
-.section{
+.section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin: 1rem;
     background-color: white;
     box-shadow: 0 0 15px gray;
-    img{
+    margin: 2rem;
+    padding: 2rem;
+    img {
         height: 100px;
         width: 100px;
     }
 
 }
-@media screen and (max-width: $maxwidth)  {
-    .section{
-        margin: 0;
-        width: 100%;
-    }
 
+.linkAllProyects {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin:1rem;
+
+    a{
+        height: 2rem;
+        padding: 5px;
+        background-color: rgb(55, 109, 179);
+        color: white;
+        border-radius: 5px;
+        font-weight: 700;
+        transition: 1s
+    };
+    a:hover{
+        text-shadow: 0 0 10px #000;
+        -moz-text-shadow: 0 0 10px #000;
+        background-color: rgb(164, 192, 230);
+    }
 }

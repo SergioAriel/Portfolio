@@ -1,4 +1,5 @@
-$maxwidth: 600px;
+$minwidth: 600px;
+// $midwidth: 900px;
 
 
 .containter {
@@ -7,14 +8,17 @@ $maxwidth: 600px;
 
     main {
         background-color: rgb(66, 66, 66);
-        border: double;
-        border-width: 7px;
-        border-color: gray;
+        height: 100%;
+        width: 100%;
+        margin:2rem;
+
     }
 
-    @media screen and (max-width: $maxwidth) {
+    @media screen and (min-width: $minwidth) {
         main {
-            border: none;
+            width: 80%;
+            border: double;
+            border-width: 5px;
         }
     }
 }
