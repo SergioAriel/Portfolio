@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Navbar from "./Navbar/Navbar.jsx"
+import Footer from './Footer/Footer.jsx'
 import style from './Layout.module.scss'
 
 export default function Layout({ children }) {
@@ -8,6 +9,7 @@ export default function Layout({ children }) {
             <main >
                 <Navbar />
                 {children}
+                <Footer/>
             </main>
         </div>
     )

@@ -8,12 +8,31 @@ $maxwidth: 600px;
     background-color: white;
     box-shadow: 0 0 15px gray;
     margin: 2rem;
-    padding: 2rem;
+    padding: 1rem;
+
     img {
         height: 100px;
         width: 100px;
     }
 
+    .skills{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: auto;
+    }
+    
+    .skillsCodeBlock{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 25%;
+        height: 100%;
+
+    }
+    .divCodeBlock{
+        height: 100%;
+    }
 }
 
 .linkAllProyects {
@@ -36,4 +55,9 @@ $maxwidth: 600px;
         -moz-text-shadow: 0 0 10px #000;
         background-color: rgb(164, 192, 230);
     }
+}
+
+.transition{
+    transition: all 1s ease;
+
 }

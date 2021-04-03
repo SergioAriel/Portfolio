@@ -10,12 +10,11 @@ $minwidth: 600px;
         background-color: rgb(66, 66, 66);
         height: 100%;
         width: 100%;
-        margin:2rem;
-
     }
 
     @media screen and (min-width: $minwidth) {
         main {
+            height: 100%;
             width: 80%;
             border: double;
             border-width: 5px;
