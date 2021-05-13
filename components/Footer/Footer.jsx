@@ -2,10 +2,12 @@ import Link from "next/link"
 import styles from './Footer.module.scss'
 
 export default function Navbar() {
+
+    const year = new Date();
     return (
         <div className={styles.container}>
-            <span>Sergio Ariel Solis Portfolio</span>
-            <span>2021</span>
+            <span>Creado con NEXTJS</span>
+            <span>{year.getFullYear()}</span>
         </div>
     )
 }

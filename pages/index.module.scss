@@ -1,4 +1,4 @@
-$maxwidth: 600px;
+$minwidth: 600px;
 
 .section {
     display: flex;
@@ -6,31 +6,19 @@ $maxwidth: 600px;
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    box-shadow: 0 0 15px gray;
+    box-shadow: 0 0 60px gray;
     margin: 2rem;
     padding: 1rem;
-
-    img {
-        height: 100px;
-        width: 100px;
-    }
 
     .skills{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: auto;
     }
     
     .skillsCodeBlock{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        width: 25%;
-        height: 100%;
-
-    }
-    .divCodeBlock{
         height: 100%;
     }
 }
@@ -57,7 +45,16 @@ $maxwidth: 600px;
     }
 }
 
-.transition{
-    transition: all 1s ease;
-
+.sectionProyect{
+    @extend .section;
+    padding: 0;
+    text-align:center;
+    
+    
+    @media screen and (min-width: $minwidth) {
+        div{
+            width: calc(100% /3);
+        }
+    }
+    
 }

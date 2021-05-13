@@ -167,6 +167,37 @@ module.exports = router;
 
 export const institutions = [
     {
-
+        institution: "SoyHenry",
+        career: "FullStack Developer",
+        year: "2020 - 2021"
+    },
+    {
+        institution: "Elearning UTN",
+        career: "FullStack Developer",
+        year: "2019"
+    },
+    {
+        institution: "CIC Centro Internacional de Coctelería",
+        career: "Bartender Profesional",
+        year: "2015"
+    },
+    {
+        institution: "ETER, Escuela de Comunicación",
+        career: "Operación Técnica de Radio",
+        year: "2014"
+    },
+    {
+        institution: "Instituto Eymard",
+        career: "Bachiller en Humanidades y Ciencias Sociales",
+        year: "2011"
     },
 ]
+
+export const profile = 
+    {
+        Name: "Sergio Ariel Solis",
+        yearOfBirth: "1993",
+        nacionality: "Argentina",
+        imgProfile: "imgProfile.jpg",
+        description: ""
+    }

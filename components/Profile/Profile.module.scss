@@ -1,0 +1,31 @@
+.profile{
+    width: 100%;
+    .infoProfile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        float: left;
+        border-style: double;
+        img{
+            width: auto;
+            margin-top: 1rem;
+        }
+    }
+
+    .institutions{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        float: right;
+        width: 60%;
+        padding-left: 15px;
+        h1{
+            margin: 0;
+        }
+    }
+    img{
+        height: 15rem;
+        width: 15rem;
+    }
+}
