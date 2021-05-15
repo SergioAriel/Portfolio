@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
 import styles from './index.module.scss'
@@ -27,10 +26,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
-      <Layout>
         <section className={styles.section}>
           <Profile />
         </section>
@@ -57,18 +52,18 @@ export default function Home() {
         <section className={styles.sectionProyect}>
         {
             proyects && proyects.slice(0, 6).map((proyect, index) =>
-              <div>
-                <Proyects key={index} proyect={proyect} />
-              </div>
+                <Proyects key={index} proyect={proyect} id={index}/>
             )
           }
+        {
+          proyects.length > 6 &&
           <div className={styles.linkAllProyects}>
             <Link href="/Proyects">
               <a className="btn">Ver todo</a>
             </Link>
           </div>
+        }
         </section>
-      </Layout>
     </>
   )
 }

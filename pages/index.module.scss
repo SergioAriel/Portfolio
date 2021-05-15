@@ -8,18 +8,23 @@ $minwidth: 600px;
     background-color: white;
     box-shadow: 0 0 60px gray;
     margin: 2rem;
-    padding: 1rem;
+    padding: 1.5rem;
 
     .skills{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;    
+
+        width: 80%;
     }
     
     .skillsCodeBlock{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;    
         height: 100%;
+        width: 80%;
+
     }
 }
 
@@ -47,13 +52,12 @@ $minwidth: 600px;
 
 .sectionProyect{
     @extend .section;
-    padding: 0;
     text-align:center;
     
     
-    @media screen and (min-width: $minwidth) {
+    @media screen and (min-width: 900px) {
         div{
-            width: calc(100% /3);
+            width: calc(100% / 3);
         }
     }
     

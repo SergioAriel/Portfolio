@@ -3,34 +3,12 @@ export const proyects = [
         title: "Activity-In-Countries",
         img: "countries.png",
         url: "https://activity-countries.netlify.app",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula, purus id interdum rhoncus, dolor tellus venenatis tortor, ultrices rhoncus felis felis a mi. Aenean bibendum sollicitudin odio semper suscipit."
-    },
-    {
-        title: "Activity-In-Countries",
-        img: "countries.png",
-        url: "https://activity-countries.netlify.app",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula, purus id interdum rhoncus, dolor tellus venenatis tortor, ultrices rhoncus felis felis a mi. Aenean bibendum sollicitudin odio semper suscipit."
-    },
-    {
-        title: "Activity-In-Countries",
-        img: "countries.png",
-        url: "https://activity-countries.netlify.app",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula, purus id interdum rhoncus, dolor tellus venenatis tortor, ultrices rhoncus felis felis a mi. Aenean bibendum sollicitudin odio semper suscipit."
-    }, {
-        title: "Activity-In-Countries",
-        img: "countries.png",
-        url: "https://activity-countries.netlify.app",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula, purus id interdum rhoncus, dolor tellus venenatis tortor, ultrices rhoncus felis felis a mi. Aenean bibendum sollicitudin odio semper suscipit."
-    }, {
-        title: "Activity-In-Countries",
-        img: "countries.png",
-        url: "https://activity-countries.netlify.app",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula, purus id interdum rhoncus, dolor tellus venenatis tortor, ultrices rhoncus felis felis a mi. Aenean bibendum sollicitudin odio semper suscipit."
+        description: "El trabajo consistía en crear una SPA extrayendo información de la API restcountries. En la que podíamos buscar, ordenar alfabéticamente y por densidad de población sobre los países."
     },
     {
         title: "Videogames",
         img: "countries.png",
-        url: "https://activity-countries.netlify.app",
+        description: "El trabajo consistía en crear una SPA extrayendo información de la API de RAWG de videojuegos. En la que podíamos buscar, ordenar alfabéticamente y por rating."
     }
 ]
 
@@ -42,6 +20,10 @@ export const skills = [
     {
         title: "Javascript",
         img: "Javascript.png",
+    },
+    {
+        title: "CSS",
+        img: "CSS.png",
     },
     {
         title: "ReactJS",
@@ -77,8 +59,8 @@ export default function Skills() {
 }`,
     },
     {
-        title: "CSS",
-        img: "CSS.png",
+        title: "SASS",
+        img: "Sass.png",
         language: "jsx",
         text: `
 .containerSkills {
@@ -193,11 +175,11 @@ export const institutions = [
     },
 ]
 
-export const profile = 
-    {
-        Name: "Sergio Ariel Solis",
-        yearOfBirth: "1993",
-        nacionality: "Argentina",
-        imgProfile: "imgProfile.jpg",
-        description: ""
-    }
+export const profile =
+{
+    Name: "Sergio Ariel Solis",
+    yearOfBirth: "1993",
+    nacionality: "Argentina",
+    imgProfile: "imgProfile.jpg",
+    description: ""
+}

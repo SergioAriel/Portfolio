@@ -5,7 +5,6 @@ import styles from './indexProyect.module.scss'
 
 export default function RouteProyects() {
   return (
-    <Layout>
       <div className={styles.proyectContainer}>
         {
           proyects && proyects.map((proyect, index) =>
@@ -15,6 +14,5 @@ export default function RouteProyects() {
           )
         }
       </div>
-    </Layout>
   )
 }

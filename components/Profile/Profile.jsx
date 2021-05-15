@@ -16,11 +16,11 @@ export default function Profile() {
                 <h1>Formación Académica</h1>
                 <ul>
                     {
-                    institutions && institutions.map((institution) =>{
+                    institutions && institutions.map((institution, index) =>{
                         return(
-                            <li>
+                            <li key={index}>
                                 <h5>{institution.institution}</h5>
-                                <span>{institution.career}</span>
+                                <span>{institution.career}: </span>
                                 <span>{institution.year}</span>
                             </li>
                         )
