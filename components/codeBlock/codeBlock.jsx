@@ -1,9 +1,11 @@
 import style from './codeBlock.module.scss'
 
-export default function CodeBlock({ text }) {
+export default function CodeBlock({ text, handleCode, id, codeBlockShow }) {
     return (
-        <pre className={style.codeBlock}>
-            {text}
-        </pre>
+        <div className={codeBlockShow ? style.codeBlockmodal : style.codeBlockNone} onClick={()=> handleCode(id)}>
+            <pre className={style.codeBlock}>
+                {text}
+            </pre>
+        </div>
     )
 }

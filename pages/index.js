@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { useState } from 'react'
 import styles from './index.module.scss'
 import Profile from '../components/Profile/Profile.jsx'
-import Layout from '../components/Layout.jsx'
 import Proyects from '../components/Proyects/Proyects.jsx'
 import Skill from '../components/skills/skills.jsx'
 import { skills, proyects } from '../infoJSON/infoJSON'
@@ -23,30 +22,26 @@ export default function Home() {
     }
   }
 
+  const showCodeBlock = codeBlockShow && typeof codeBlock === "number" && skills[codeBlock].text;
 
   return (
     <>
-        <section className={styles.section}>
+        <section className={styles.sectionProfile}>
           <Profile />
         </section>
         <section className={styles.section}>
-          <div className={codeBlockShow ? styles.skillsCodeBlock : styles.skills}>
+          <div className={styles.skills}>
             {
               skills.map((skill, index) => {
                 return (
-                  skill.text ?
-                    <Skill key={index} skill={skill} handleCode={handleCode} id={index} codeBlock={codeBlock} />
-                    :
-                    <Skill key={index} skill={skill} id={index} codeBlock={codeBlock} />
+                    <Skill key={index} skill={skill} handleCode={ skill.text && handleCode} id={index}/>
                 )
               }
               )
             }
           </div>
           {
-            codeBlockShow && typeof codeBlock === "number" && skills[codeBlock].text &&
-            <CodeBlock text={skills[codeBlock].text} />
-
+            <CodeBlock codeBlockShow={codeBlockShow} text={skills[codeBlock].text} handleCode={handleCode} id={codeBlock}/>
           }
         </section>
         <section className={styles.sectionProyect}>

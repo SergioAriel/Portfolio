@@ -1,8 +1,58 @@
-.codeBlock{
-    height: 100%;
-    max-width: 100%;
-    background-color: black;
-    color: white;
-    padding: 2rem;
-    font-size: 15px;
+.codeBlockmodal{
+    top:0;
+    left: 0;
+    margin: 0;
+    z-index: 1000;
+    background-color: rgba(0,0,0, 0.5) !important;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: 1s;
+    .codeBlock{   
+        border: solid 1rem white;
+        max-width: fit-content;
+        max-height: 80%;
+        border-radius: 15px;
+        background-color: black;
+        color: white;   
+        padding: 2rem;
+        font-size: 15px;
+        overflow-y: auto;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+        transition: all 1s;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 1px;
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgb(129, 136, 143); 
+        border-radius: 10px;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background:  rgb(78, 82, 83); 
+      }
+}
+
+.codeBlockNone{
+    @extend .codeBlockmodal;
+    opacity: 0;
+    top: 0;
+    left:0;
+    height: 0;
+    width: 0;
+    transition: 1s;
+    position: fixed;
 }

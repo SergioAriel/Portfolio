@@ -2,13 +2,12 @@
     display: flex;
     background-color: black;
     color: rgb(93, 146, 196);
-    font-size: 20px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     .title{
         margin-left: 1rem;
-        font-size: 25px;
+        font-size: 1.5rem;
         font-weight: 900;
     }
 
@@ -17,6 +16,7 @@
 .contacts{
     display: flex;
     justify-content: space-around;
+    padding:0;
     img{
         height: 3em;
         width: 3em;

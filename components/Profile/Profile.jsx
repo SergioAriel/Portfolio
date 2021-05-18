@@ -8,9 +8,6 @@ export default function Profile() {
         <div className={style.profile}>
             <div className={style.infoProfile}>
                 <img src={`/profile/${profile.imgProfile}`}/>
-                <span>Año de Nacimiento {profile.yearOfBirth}</span>
-                <span>Nacionalidad {profile.nacionality}</span>
-                <span></span>
             </div>
             <div className={style.institutions}>
                 <h1>Formación Académica</h1>

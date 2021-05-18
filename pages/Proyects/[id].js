@@ -4,11 +4,10 @@ import { useRouter } from 'next/router'
 
 export default function Proyect (props) {
   const router = useRouter();
-  // if(router.isFallback) return "Loading..."
-
+  if(router.isFallback) return "Loading..."
   return (
       <div className={styles.proyectID}>
-        <iframe src={props.url}></iframe>
+        <iframe src={props.url}/>
       </div>
   )
 }
@@ -29,12 +28,3 @@ export function getStaticProps(context){
   }
   return {props: proyects[id]}
 }
-
-// Proyect.getInitialProps = (ctx) => {
-//   const { query, res } = ctx
-//   const { id } = query
-//   if(res){
-//     res.writeHead(301, { Location: "/"}).end()
-//   }
-//   return {proyect: proyects[id]}
-// }
