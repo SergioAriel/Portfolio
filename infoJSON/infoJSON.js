@@ -7,7 +7,7 @@ export const proyects = [
     },
     {
         title: "Videogames",
-        img: "countries.png",
+        img: "videogames.png",
         description: "El trabajo consistía en crear una SPA extrayendo información de la API de RAWG de videojuegos. En la que podíamos buscar, ordenar alfabéticamente y por rating."
     }
 ]
