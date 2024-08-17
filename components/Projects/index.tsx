@@ -71,7 +71,7 @@ export default function Project({ project, id }: any) {
                                         href={project?.github?.url}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className='text-center text-sm h-7 p-2 flex justify-center rounded-t-md items-center dark:bg-slate-700 bg-white text-gray-700 hover:text-gray-500 hover:bg-gray-200 cursor-pointer '
+                                        className='text-center text-sm h-7 p-2 flex justify-center rounded-md items-center dark:bg-slate-700 bg-white text-gray-700 dark:text-gray-200 hover:text-gray-500 hover:bg-gray-200 cursor-pointer '
                                     >
                                         Github
 
@@ -81,7 +81,7 @@ export default function Project({ project, id }: any) {
                                         href={project?.url}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className='text-center text-sm h-7 p-2 flex justify-center rounded-b-md items-center dark:bg-slate-700 bg-white text-gray-700 hover:text-gray-500 hover:bg-gray-200 cursor-pointer '
+                                        className='text-center text-sm h-7 p-2 flex justify-center rounded-md items-center dark:bg-slate-700 bg-white text-gray-700 dark:text-gray-200 hover:text-gray-500 hover:bg-gray-200 cursor-pointer '
                                     >
                                         Ver proyecto
                                     </Link>

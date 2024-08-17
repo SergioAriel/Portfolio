@@ -12,6 +12,7 @@ export const Contact = () => {
     const [subject, setSubject] = useState("")
     const [message, setMessage] = useState("")
     const [error, setError] = useState(false)
+    const [success, setSuccess] = useState(false)
 
 
     const handleSubmit = () => {
@@ -33,9 +34,26 @@ export const Contact = () => {
                 message,
             }),
         })
-            .then((res) => res.json())
+            .then((res) => {
+                if (res.status === 500) {
+                    setError(true)
+                    setTimeout(() => {
+                        setError(false)
+                    }, 2000)
+                    return;
+                }
+                return res.json()
+                    
+            })
             .then((data) => {
-                console.log(data)
+                if (data.res === "success") {
+                    setSuccess(true)
+                    console.log(data)
+                    setTimeout(() => {
+                        setSuccess(false)
+                    }, 2000)
+                    return;
+                }
             })
             .catch((err) => {
                 console.log(err)
@@ -102,7 +120,7 @@ export const Contact = () => {
 
                 <PaperAirplaneIcon
                     onClick={handleSubmit}
-                    className={`w-8 h-8  ${error ? "text-red-600 hover:text-red-500" : "text-gray-500 dark:text-gray-200 "} hover:text-blue-500`}
+                    className={`w-8 h-8 self-end mb-8 ${ success && "!text-green-500 !hover:text-green-400"  } ${error && "!text-red-600 !hover:text-red-500"} text-gray-500 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-500`}
                 />
             </div>
 

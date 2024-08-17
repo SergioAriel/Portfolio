@@ -28,14 +28,7 @@ const sendEmail = (req: NextApiRequest, res: NextApiResponse) => {
           return;
         }
 
-        console.log({
-          type: "OAuth2",
-          user: process.env.USER_MAIL,
-          clientId: process.env.CLIENT_ID,
-          clientSecret: process.env.CLIENT_SECRET,
-          refreshToken: process.env.REFRESH_TOKEN,
-          accessToken: token
-        })
+
 
         const SMTPTransport: SMTPTransport.Options = {
           host: "smtp.gmail.com",

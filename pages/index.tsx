@@ -13,7 +13,7 @@ import Link from 'next/link'
 export default function Home() {
 
   return (
-    <div className="flex flex-col items-center lg:items-start lg:flex-row w-10/12 py-2 gap-4 ">
+    <div className="flex flex-col items-center lg:items-start lg:flex-row w-10/12 py-4 gap-4 ">
       <div
         className='order-1 lg:order-none flex h-max lg:w-3/12 w-full flex-col gap-4'
       >
@@ -33,7 +33,7 @@ export default function Home() {
         >
           {
             projects.length > 4 &&
-            <div className="absolute top-1 right-1">
+            <div className="absolute top-1 right-4">
               <Link href="/projects"
               className="text-xs font-bold"
               >
@@ -78,11 +78,11 @@ export default function Home() {
               Hola, soy Sergio Ariel Solis
             </p>
             <p className="text-center text-gray-500 dark:text-gray-400">
-              Siempre tuve interes por la tecnología, desde muy chico, aprendiiendo a reparar computadoras.
+              Siempre tuve interes por la tecnología, desde muy chico, queria saber como reparar computadoras.
               Mi primer carrera fue de operador tecnico de radio y televisión.
               Luego en 2018 comencé a estudiar programación realizando cursos en UTN, y luego en soyHenry.
               En 2019 consegui mi primer trabajo como desarrollador Full Stack.
-              Desde entonces he estado trabajando en diferentes proyectos y proyectos open source.
+              Desde entonces he estado trabajando en diferentes proyectos, algunos open source.
 
             </p>
             <p className="text-center text-gray-500 dark:text-gray-400">
