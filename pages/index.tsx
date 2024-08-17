@@ -6,13 +6,14 @@ import Skill from '../components/skills'
 import { skills, projects, institutions } from '../info'
 import { Contact } from '@/components/Contact'
 import SocialNetworks from '@/components/SocialNetworks'
+import Link from 'next/link'
 
 
 
 export default function Home() {
 
   return (
-    <div className="flex flex-col items-center lg:items-start lg:flex-row w-10/12 py-2 gap-4 dark:text-gray-300">
+    <div className="flex flex-col items-center lg:items-start lg:flex-row w-10/12 py-2 gap-4 ">
       <div
         className='order-1 lg:order-none flex h-max lg:w-3/12 w-full flex-col gap-4'
       >
@@ -31,15 +32,17 @@ export default function Home() {
 
         >
           {
-            projects.length > 6 &&
+            projects.length > 4 &&
             <div className="absolute top-1 right-1">
-              <p className="text-xs font-bold">
+              <Link href="/projects"
+              className="text-xs font-bold"
+              >
                 Más proyectos
-              </p>
+              </Link>
             </div>
           }
             {
-              projects && projects.slice(0, 6).map((project, index) =>
+              projects && projects.slice(0, 4).map((project, index) =>
                 <Project key={index} project={project} id={index} />
               )
             }

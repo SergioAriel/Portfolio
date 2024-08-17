@@ -72,7 +72,7 @@ export const Contact = () => {
                                 ...from,
                                 name: e.target.value
                             })}
-                            className="w-1/2 dark:bg-slate-400 bg-gray-200 dark:placeholder-white dark:text-white rounded-tl-xl border h-6 p-2 border-black focus:outline-none focus:border-blue-500 focus:border-2"
+                            className="w-1/2 dark:bg-slate-400 bg-gray-200 dark:placeholder-white dark:text-white hover:bg-slate-100 dark:hover:bg-slate-300 rounded-tl-xl border h-6 p-2 border-black focus:outline-none focus:border-blue-500 focus:border-2"
                         />
                         <input
                             type="text"
@@ -82,7 +82,7 @@ export const Contact = () => {
                                 email: e.target.value
                             })}
 
-                            className="w-1/2 dark:bg-slate-400 bg-gray-200 dark:placeholder-white dark:text-white rounded-tr-xl border h-6 p-2 border-black focus:outline-none focus:border-blue-500 focus:border-2"
+                            className="w-1/2 dark:bg-slate-400 bg-gray-200 dark:placeholder-white dark:text-white hover:bg-slate-100 dark:hover:bg-slate-300 rounded-tr-xl border h-6 p-2 border-black focus:outline-none focus:border-blue-500 focus:border-2"
                         />
                     </div>
                     <input
@@ -90,11 +90,11 @@ export const Contact = () => {
                         placeholder="Asunto"
                         onChange={(e) => setSubject(e.target.value)}
 
-                        className="w-full dark:bg-slate-400 bg-gray-200 dark:placeholder-white dark:text-white border-x h-6 p-2 border-black focus:outline-none focus:border-blue-500 focus:border-2"
+                        className="w-full dark:bg-slate-400 bg-gray-200 dark:placeholder-white dark:text-white hover:bg-slate-100 dark:hover:bg-slate-300 border-x h-6 p-2 border-black focus:outline-none focus:border-blue-500 focus:border-2"
                     />
                     <textarea
                         onChange={(e) => setMessage(e.target.value)}
-                        className="w-full h-24 dark:bg-slate-400 bg-gray-200 dark:placeholder-white dark:text-white rounded-b-xl border border-x  p-2 border-black resize-none focus:outline-none focus:border-blue-500 focus:border-2"
+                        className="w-full h-24 dark:bg-slate-400 bg-gray-200 dark:placeholder-white dark:text-white hover:bg-slate-100 dark:hover:bg-slate-300 rounded-b-xl border border-x  p-2 border-black resize-none focus:outline-none focus:border-blue-500 focus:border-2"
                         placeholder="Escribe aquí tu mensaje"
 
                     />

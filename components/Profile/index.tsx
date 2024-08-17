@@ -25,7 +25,7 @@ export default function Profile() {
             >
                 <p >Sergio Ariel Solis</p>
                 <p className=" text-xs text-gray-500 dark:text-gray-300">Full Stack Developer</p>
-                <p className="text-center rounded-md border p-1 border-slate-400 dark:text-black dark:font-semibold bg-[rgba(0,255,36,1)] text-xs font-black">Disponible para trabajar</p>
+                <p className="text-center rounded-md border p-1 border-slate-400  bg-[rgba(0,255,36,1)] text-black text-xs font-black">Disponible para trabajar</p>
             </div>
 
         </div>
