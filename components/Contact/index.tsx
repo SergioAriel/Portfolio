@@ -48,7 +48,6 @@ export const Contact = () => {
             .then((data) => {
                 if (data.res === "success") {
                     setSuccess(true)
-                    console.log(data)
                     setTimeout(() => {
                         setSuccess(false)
                     }, 2000)
@@ -56,7 +55,6 @@ export const Contact = () => {
                 }
             })
             .catch((err) => {
-                console.log(err)
                 setError(true)
                 setTimeout(() => {
                     setError(false)

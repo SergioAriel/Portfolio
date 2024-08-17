@@ -47,10 +47,6 @@ const sendEmail = (req: NextApiRequest, res: NextApiResponse) => {
         const transporter = nodemailer.createTransport(SMTPTransport);
 
         const priority: 'high' = 'high'
-        console.log({
-          name: from.name,
-          address: from.email
-        })
 
         const mailOption = {
           from: `${from.name} <${from.email}>`,

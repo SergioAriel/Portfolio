@@ -11,8 +11,6 @@ export default function Project({ project, id }: any) {
     const popoverRef = useRef<HTMLDivElement>(null);
     const handlerPopOver = useRef<SVGSVGElement>(null);
 
-    console.log(project)
-
     useEffect(() => {
         const widthWindow = document.body.clientWidth;
         const leftPopOver = popoverRef?.current?.getBoundingClientRect().left;

@@ -5,12 +5,6 @@ import { use, useEffect, useState } from "react"
 
 export const Navbar = () => {
 
-    useEffect(() => {        
-
-
-          console.log(matchMedia)
-    }, [])
-
     useEffect(() => {
         const matchMedia = window.matchMedia("(prefers-color-scheme: dark)")
 
@@ -38,7 +32,6 @@ export const Navbar = () => {
 
     const handlerTheme = () => {
         document.body.classList.toggle("dark")
-        console.log(document.body.classList.contains("dark") ? "dark" : "light")
         localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light")
     }
 
@@ -71,7 +64,7 @@ export const Navbar = () => {
                 <p>Proyectos</p>
             </Link>
             {
-                <LightBulbIcon onClick={()=> handlerTheme()}  className="text-yellow-500 w-4 h-4  dark:text-black" />
+                <LightBulbIcon onClick={()=> handlerTheme()}  className="text-yellow-500 w-4 h-4  dark:text-gray-400" />
             }
         </div >
     )

@@ -3,7 +3,6 @@ import { projects } from '../../info'
 
 export default function RouteProyects() {
 
-  console.log(projects)
   return (
 
     <div
