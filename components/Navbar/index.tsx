@@ -36,7 +36,7 @@ export const Navbar = () => {
     }
 
     return (
-        <div className="fixed z-50 pt-4 top-0 flex font-bold items-center justify-center h-6 gap-4 w-full dark:text-white">
+        <div className="fixed z-50 pt-4 pb-2 top-0  flex font-bold items-center justify-center gap-4 w-full backdrop-blur-sm dark:text-white">
             <Link
                 href={"/"}
                 className="flex text-xs gap-2 items-center"

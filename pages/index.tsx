@@ -95,7 +95,7 @@ export default function Home() {
       </div>
 
       <section className="order-4 w-full  lg:w-2/12 rounded-xl border dark:bg-slate-700 bg-white border-gray-100 p-2 py-4 shadow-md">
-        <div className="grid grid-cols-2 justify-items-center gap-3 w-full">
+        <div className="grid grid-cols-3 items-center justify-items-center gap-3 w-full">
           {
             skills.map((skill, index) => {
               return (

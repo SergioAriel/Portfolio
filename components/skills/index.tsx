@@ -3,7 +3,7 @@ import Image from 'next/image'
 const Skill = ({ skill, handleCode, id }: any) => {
 
     return (
-        <div className="w-10 h-10 hover:drop-shadow-skills dark:hover:drop-shadow-skills-dark">
+        <div className="w-10 h-10 flex items-center hover:drop-shadow-skills dark:hover:drop-shadow-skills-dark">
 
             <Image
                 alt={skill.title}
@@ -11,6 +11,7 @@ const Skill = ({ skill, handleCode, id }: any) => {
                 height={200}
                 src={`/skills/${skill.img}`} title={skill.title}
                 onClick={() => handleCode ? handleCode(id) : null}
+                
             />
         </div>
     )
