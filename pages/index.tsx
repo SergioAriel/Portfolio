@@ -3,7 +3,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/solid'
 import Profile from '../components/Profile'
 import Project from '../components/Projects'
 import Skill from '../components/skills'
-import { skills, projects, institutions } from '../info'
+import { skills, projects, institutions, experience } from '../info'
 import { Contact } from '@/components/Contact'
 import SocialNetworks from '@/components/SocialNetworks'
 import Link from 'next/link'
@@ -28,12 +28,12 @@ export default function Home() {
 
         <div
           id='projects'
-          className='relative border dark:bg-slate-700 bg-white border-gray-100 shadow-md lg:grid lg:grid-cols-2 flex flex-col gap-4 h-max rounded-xl w-full p-4 pt-8'
+          className=' border dark:bg-slate-700 bg-white border-gray-100 shadow-md flex flex-col gap-4 h-max rounded-xl w-full p-4'
 
         >
           {
             projects.length > 4 &&
-            <div className="absolute top-1 right-4">
+            <div className="top-1 left-4">
               <Link href="/projects"
               className="text-xs font-bold"
               >
@@ -41,35 +41,82 @@ export default function Home() {
               </Link>
             </div>
           }
+          <div
+            className='flex flex-col lg:grid lg:grid-cols-2 gap-4 w-full'
+          >
             {
               projects && projects.slice(0, 4).map((project, index) =>
                 <Project key={index} project={project} id={index} />
               )
             }
+          </div>
         </div>
-
+        <div
+          id="experience"
+            className="border dark:bg-slate-700  bg-white border-gray-100 shadow-md flex flex-col gap-4 h-max rounded-xl w-full p-4"
+        >
+          <p className='font-bold underline'>Experiencia</p>
+          <div
+            className='flex flex-col'
+          >
+            {
+              experience.map((experience, index) =>
+                <div key={index} className="flex flex-col ml-8 relative pb-4 last:pb-0 before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black dark:before:border- before:content-[''] ">
+                  <ArrowRightIcon className="absolute top-1 -left-9 w-5 h-5 text-gray-500 dark:text-gray-100" />
+                  <p className="font-bold dark:text-gray-100">
+                    {experience.company} ({experience.year}):
+                  </p>
+                  <div
+                    className='flex'
+                  >
+                    <p className=" text-gray-500 dark:text-gray-400">
+                      {experience.position} 
+                    </p>
+                  </div>
+                  <div
+                    className='flex flex-col'
+                  >
+                      {
+                        experience.description.map((description, index) =>
+                          <p key={index}>
+                            {description}
+                          </p>
+                        )
+                      }
+                  </div>
+                </div>
+              )
+            }
+          </div>
+        </div>
+          
         <div
           id="formation"
-          className="border dark:bg-slate-700  bg-white border-gray-100 shadow-md flex flex-col h-max rounded-xl w-full p-4 pt-8"
+          className="border dark:bg-slate-700  bg-white border-gray-100 shadow-md flex flex-col gap-4 h-max rounded-xl w-full p-4"
         >
-          {
-            institutions.map((institution, index) =>
-              <div key={index} className=" flex flex-col ml-8 relative pb-4 last:pb-0 before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black dark:before:border- before:content-[''] ">
-                <ArrowRightIcon className="absolute top-1 -left-9 w-5 h-5 text-gray-500 dark:text-gray-200" />
-                <p className="font-bold dark:text-gray-100">
-                  {institution.institution} ({institution.year}):
-                </p>
-                <div
-                  className='flex'
-                >
-                  <p className=" text-gray-500 dark:text-gray-400">
-                    {institution.career} 
+          <p className='font-bold underline'>Formación</p>
+          <div
+            className='flex flex-col'
+          >
+            {
+              institutions.map((institution, index) =>
+                <div key={index} className=" flex flex-col ml-8 relative pb-4 last:pb-0 before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black dark:before:border- before:content-[''] ">
+                  <ArrowRightIcon className="absolute top-1 -left-9 w-5 h-5 text-gray-500 dark:text-gray-100" />
+                  <p className="font-bold dark:text-gray-100">
+                    {institution.institution} ({institution.year}):
                   </p>
+                  <div
+                    className='flex'
+                  >
+                    <p className=" text-gray-500 dark:text-gray-400">
+                      {institution.career} 
+                    </p>
 
+                  </div>
                 </div>
-              </div>
-            )
-          }
+              )
+            }
+          </div>
         </div>
 
         <div id='presentation' className="flex flex-col items-center rounded-xl border dark:bg-slate-700 bg-white border-gray-100 p-4 shadow-md gap-4 justify-center">
@@ -95,7 +142,7 @@ export default function Home() {
       </div>
 
       <section className="order-4 w-full  lg:w-2/12 rounded-xl border dark:bg-slate-700 bg-white border-gray-100 p-2 py-4 shadow-md">
-        <div className="grid grid-cols-3 items-center justify-items-center gap-3 w-full">
+        <div className="grid grid-cols-3 lg:grid-cols-2 items-center justify-items-center gap-3 w-full">
           {
             skills.map((skill, index) => {
               return (

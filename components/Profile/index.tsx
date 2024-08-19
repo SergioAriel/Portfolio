@@ -12,7 +12,9 @@ export default function Profile() {
             <a 
                 className='absolute top-4 right-4'
                 href={"CVSergioSolis.pdf"} target="_blank" rel="noopener noreferrer" download>
-                <DocumentArrowDownIcon className=" w-4 h-4 text-gray-500 dark:text-gray-200 hover:text-gray-700 dark:hover:text-gray-100" />
+                <DocumentArrowDownIcon 
+                        className='h-6 w-6 p-1 flex justify-center rounded-md items-center  cursor-pointer text-gray-800 hover:text-gray-100 hover:bg-gray-400 dark:text-gray-100 dark:hover:text-gray-800 dark:hover:bg-gray-300'
+                        />
             </a>
             <div
                 className="relative w-16 h-16 rounded-full"

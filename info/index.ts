@@ -2,7 +2,7 @@ export const projects = [
     {
         title: "Giveo",
         description: "Giveo es una aplicación donde se podrán generar videos interactivos para enseñar programación más fácil y eficientemente.",
-        url: "https://drive.google.com/file/d/1zEQrlWdThkTK41HmJ7dCysfFDpy4jF4K/view?usp=drive_link"
+        docs: "https://drive.google.com/file/d/1zEQrlWdThkTK41HmJ7dCysfFDpy4jF4K/view?usp=drive_link"
     },
     {
         title: "Solana Wallet (estudio)",
@@ -16,7 +16,7 @@ export const projects = [
     },
     {
         title: "Solana Explorer (estudio)",
-        url: "explorer-sol-vert.vercel.app",
+        url: "https://explorer-sol-vert.vercel.app",
         githib: {
             url: "https://github.com/SergioAriel/solana-explorer",
             name: "solana-explorer",
@@ -58,6 +58,10 @@ export const skills = [
     {
         title: "NextJS",
         img: "nextjs.png",
+    },
+    {
+        title: "TailwindCSS",
+        img: "tailwindcss.png"
     },
     {
         title: "Vercel",
@@ -145,4 +149,24 @@ export const institutions = [
         career: "Bachiller en Humanidades y Ciencias Sociales",
         year: "2011"
     },
+]
+
+export const experience = [
+    {
+        company: "Freelance",
+        position: "Desarrollador FrontEnd",
+        year: "Actualidad",
+        description: [`- Participacion en el FrontEnd de proyectos relacionados con la blockchain de Solana,`]
+    },
+    {
+        company: "Cooperativa Mental",
+        position: "Desarrollador FullStack",
+        year: "2021 - 2023",
+        description: [`- Desarrollo de Mate y Soda, aplicaciones open source con integracion en solana.`,
+            `- Desarrollo de una billetera virtual interna para la empresa, con la
+posibilidad de crear equipos de trabajo, liquidaciones de los proyectos y
+pedidos de retiro del dinero. Utilizo Firebase como base de datos
+junto con su API para realizar las llamadas directas desde el cliente y
+NextJs para el FrontEnd.`]
+    }
 ]

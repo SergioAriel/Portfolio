@@ -36,7 +36,7 @@ export const Navbar = () => {
     }
 
     return (
-        <div className="fixed z-50 pt-4 pb-2 top-0  flex font-bold items-center justify-center gap-4 w-full backdrop-blur-sm dark:text-white">
+        <div className="fixed z-50 pt-4 pb-2 top-0  flex font-bold items-center justify-center gap-4 w-full backdrop-blur-md dark:text-white">
             <Link
                 href={"/"}
                 className="flex text-xs gap-2 items-center"
@@ -64,7 +64,7 @@ export const Navbar = () => {
                 <p>Proyectos</p>
             </Link>
             {
-                <LightBulbIcon onClick={()=> handlerTheme()}  className="text-yellow-500 w-4 h-4  dark:text-gray-400" />
+                <LightBulbIcon onClick={()=> handlerTheme()}  className="text-yellow-500 w-4 h-4  dark:text-gray-100" />
             }
         </div >
     )

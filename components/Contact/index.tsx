@@ -118,7 +118,7 @@ export const Contact = () => {
 
                 <PaperAirplaneIcon
                     onClick={handleSubmit}
-                    className={`w-8 h-8 self-end mb-8 ${ success && "!text-green-500 !hover:text-green-400"  } ${error && "!text-red-600 !hover:text-red-500"} text-gray-500 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-500`}
+                    className={`w-8 h-8 self-end mb-8 ${ success && "!text-green-500 !hover:text-green-400"  } ${error && "!text-red-600 !hover:text-red-500"} text-gray-500 dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-500`}
                 />
             </div>
 

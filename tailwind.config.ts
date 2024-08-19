@@ -15,8 +15,8 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       dropShadow: {
-        'skills': '10px 5px 1px rgb(104,104,104)',
-        'skills-dark': '10px 5px 1px rgb(200,200,200)',
+        'skills': '5px 5px 1px rgb(104,104,104)',
+        'skills-dark': '5px 5px 1px rgb(243 244 246)',
 
       }
     },
