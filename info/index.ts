@@ -5,26 +5,6 @@ export const projects = [
         docs: "https://drive.google.com/file/d/1zEQrlWdThkTK41HmJ7dCysfFDpy4jF4K/view?usp=drive_link"
     },
     {
-        title: "Solana Wallet (estudio)",
-        url: "solana-wallet-alpha.vercel.app",
-        github: {
-            url: "https://github.com/SergioAriel/solana-wallet",
-            name: "solana-wallet",
-            owner: "SergioAriel"
-        },
-        description: "Billetera basada e integrada integrada en la red de Solana. Agrega contactos locales y realiza envios de solana a cualquier wallet. DevNet."
-    },
-    {
-        title: "Solana Explorer (estudio)",
-        url: "https://explorer-sol-vert.vercel.app",
-        githib: {
-            url: "https://github.com/SergioAriel/solana-explorer",
-            name: "solana-explorer",
-            owner: "SergioAriel"
-        },
-        description: "Explorador que obtiene datos desde la api Helius. Puedes ver el saldo, las transacciones y los NFTs de la cuenta que estas buscando."
-    },
-    {
         title: "Soda",
         url: "https://soda-webapp.vercel.app/",
         github: {
@@ -43,6 +23,35 @@ export const projects = [
             owner: "cooperativamental"
         },
         description: "Desarrollo de una billetera virtual web3, con la posibilidad de crear proyecto, uniendo a diferentes profesionales independiente, y ejecutando los pagos automatizados desde la blockchain de Solana. Utilizo NextJS para el FrontEnd, y ExpressJS para el intercambio de informacion con la blockchain de Solana."
+    },
+    {
+        title: "ADS Solana (estudio)",
+        github: {
+            name: "ads-solana-dioxus",
+            owner: "SergioAriel",
+            url:"https://github.com/SergioAriel/ads-solana-dioxus"
+        },
+        description: "Plataforma de anuncios para Solana, desarrollada con Dioxus."
+    },
+    {
+        title: "Solana Wallet (estudio)",
+        url: "solana-wallet-alpha.vercel.app",
+        github: {
+            url: "https://github.com/SergioAriel/solana-wallet",
+            name: "solana-wallet",
+            owner: "SergioAriel"
+        },
+        description: "Billetera basada e integrada integrada en la red de Solana. Agrega contactos locales y realiza envios de solana a cualquier wallet. DevNet."
+    },
+    {
+        title: "Solana Explorer (estudio)",
+        url: "https://explorer-sol-vert.vercel.app",
+        githib: {
+            url: "https://github.com/SergioAriel/solana-explorer",
+            name: "solana-explorer",
+            owner: "SergioAriel"
+        },
+        description: "Explorador que obtiene datos desde la api Helius. Puedes ver el saldo, las transacciones y los NFTs de la cuenta que estas buscando."
     },
     {
         title: "Activity-In-Countries (estudio)",
