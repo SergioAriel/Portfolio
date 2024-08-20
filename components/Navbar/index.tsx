@@ -39,26 +39,26 @@ export const Navbar = () => {
         <div className="fixed z-50 pt-4 pb-2 top-0  flex font-bold items-center justify-center gap-4 w-full backdrop-blur-md dark:text-white">
             <Link
                 href={"/"}
-                className="flex text-xs gap-2 items-center"
+                className="flex text-xs gap-2 items-center hover:text-blue-500"
             >
                 <p>Perfil</p>
             </Link>
             <Link
                 href={"#contact"}
-                className="flex text-xs gap-2 items-center"
+                className="flex text-xs gap-2 items-center hover:text-blue-500"
             >
                 <p>Contacto</p>
             </Link>
             <Link
                 href={"#presentation"}
-                className="flex text-xs gap-2 items-center"
+                className="flex text-xs gap-2 items-center hover:text-blue-500"
 
             >
                 <p>Presentación</p>
             </Link>
             <Link
                 href={"#projects"}
-                className="flex text-xs gap-2 items-center"
+                className="flex text-xs gap-2 items-center hover:text-blue-500"
 
             >
                 <p>Proyectos</p>
