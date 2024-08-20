@@ -64,7 +64,7 @@ export const Navbar = () => {
                 <p>Proyectos</p>
             </Link>
             {
-                <LightBulbIcon onClick={()=> handlerTheme()}  className="text-yellow-500 w-4 h-4  dark:text-gray-100" />
+                <LightBulbIcon onClick={()=> handlerTheme()}  className="text-yellow-500 w-4 h-4  dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-500" />
             }
         </div >
     )
